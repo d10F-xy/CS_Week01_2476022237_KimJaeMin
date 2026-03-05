@@ -34,6 +34,7 @@
             label3 = new Label();
             label4 = new Label();
             button1 = new Button();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -73,7 +74,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("맑은 고딕", 15F);
-            label3.Location = new Point(365, 236);
+            label3.Location = new Point(365, 224);
             label3.Name = "label3";
             label3.Size = new Size(149, 28);
             label3.TabIndex = 3;
@@ -84,7 +85,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("맑은 고딕", 15F);
-            label4.Location = new Point(365, 190);
+            label4.Location = new Point(365, 185);
             label4.Name = "label4";
             label4.Size = new Size(174, 28);
             label4.TabIndex = 4;
@@ -93,7 +94,7 @@
             // button1
             // 
             button1.Font = new Font("맑은 고딕", 15F);
-            button1.Location = new Point(402, 288);
+            button1.Location = new Point(494, 311);
             button1.Name = "button1";
             button1.Size = new Size(153, 46);
             button1.TabIndex = 5;
@@ -101,11 +102,23 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // button2
+            // 
+            button2.Font = new Font("맑은 고딕", 12F);
+            button2.Location = new Point(358, 267);
+            button2.Name = "button2";
+            button2.Size = new Size(102, 32);
+            button2.TabIndex = 6;
+            button2.Text = "Github";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(659, 369);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -127,5 +140,6 @@
         private Label label3;
         private Label label4;
         private Button button1;
+        private Button button2;
     }
 }

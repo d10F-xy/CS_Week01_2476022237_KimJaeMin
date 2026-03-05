@@ -27,5 +27,17 @@ namespace WinFormsApp3
             Random rand = new Random();
             this.BackColor = Color.FromArgb(rand.Next(200), rand.Next(200), rand.Next(256));
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // System.Diagnostics.Process.Start("URL주소");를 사용해서 해보려 했으나, 오류발생.
+
+            var psi = new System.Diagnostics.ProcessStartInfo // 프로세스 시작 정보 객체 생성
+            {
+                FileName = "https://github.com/d10F-xy", // 열고자 하는 URL 주소
+                UseShellExecute = true // 브라우저에서 실행하기 위해서는 이 문장이 필요함.(사용하지 않을 시에는 문자열로 인식하여 오류가 발생함.)
+            };
+            System.Diagnostics.Process.Start(psi); // 프로세스 시작하는 명령어
+        }
     }
 }
