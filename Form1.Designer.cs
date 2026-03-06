@@ -41,6 +41,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
             pictureBox1.Image = Properties.Resources._240301_메인_프로필_The_Poles_scaled;
             pictureBox1.Location = new Point(34, 54);
             pictureBox1.Name = "pictureBox1";

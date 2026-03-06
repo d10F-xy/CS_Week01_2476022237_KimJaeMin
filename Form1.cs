@@ -5,11 +5,26 @@ namespace WinFormsApp3
         public Form1()
         {
             InitializeComponent();
+            // 사진에 마우스가 올라가면 테두리 스타일을 변경하도록 이벤트 연결
+            this.pictureBox1.MouseEnter += pictureBox1_MouseEnter;
+            this.pictureBox1.MouseLeave += pictureBox1_MouseLeave;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             
+        }
+
+        // 마우스가 PictureBox 위로 들어올 때 테두리 표시
+        private void pictureBox1_MouseEnter(object sender, EventArgs e)
+        {
+            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
+        }
+
+        // 마우스가 PictureBox에서 떠날 때 테두리 제거
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            pictureBox1.BorderStyle = BorderStyle.None;
         }
 
         private void label1_Click(object sender, EventArgs e)
