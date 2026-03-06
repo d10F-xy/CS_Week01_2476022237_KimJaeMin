@@ -35,13 +35,14 @@
             label4 = new Label();
             button1 = new Button();
             button2 = new Button();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources._240301_메인_프로필_The_Poles_scaled;
-            pictureBox1.Location = new Point(33, 70);
+            pictureBox1.Location = new Point(34, 54);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(250, 245);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -93,7 +94,7 @@
             // 
             // button1
             // 
-            button1.Font = new Font("맑은 고딕", 15F);
+            button1.Font = new Font("함초롬돋움", 15F, FontStyle.Regular, GraphicsUnit.Point, 129);
             button1.Location = new Point(494, 311);
             button1.Name = "button1";
             button1.Size = new Size(153, 46);
@@ -104,7 +105,7 @@
             // 
             // button2
             // 
-            button2.Font = new Font("맑은 고딕", 12F);
+            button2.Font = new Font("함초롬돋움", 12F, FontStyle.Regular, GraphicsUnit.Point, 129);
             button2.Location = new Point(358, 267);
             button2.Name = "button2";
             button2.Size = new Size(102, 32);
@@ -113,11 +114,23 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // button3
+            // 
+            button3.Font = new Font("함초롬돋움", 17.9999981F, FontStyle.Regular, GraphicsUnit.Point, 129);
+            button3.Location = new Point(98, 305);
+            button3.Name = "button3";
+            button3.Size = new Size(121, 47);
+            button3.TabIndex = 7;
+            button3.Text = "사진 변경";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(659, 369);
+            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label4);
@@ -141,5 +154,6 @@
         private Label label4;
         private Button button1;
         private Button button2;
+        private Button button3;
     }
 }

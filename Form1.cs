@@ -9,7 +9,7 @@ namespace WinFormsApp3
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -38,6 +38,11 @@ namespace WinFormsApp3
                 UseShellExecute = true // 브라우저에서 실행하기 위해서는 이 문장이 필요함.(사용하지 않을 시에는 문자열로 인식하여 오류가 발생함.)
             };
             System.Diagnostics.Process.Start(psi); // 프로세스 시작하는 명령어
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Properties.Resources.thepoles; //리소스 파일에 내가 원하는 이미지를 추가한 후, pictureBox1의 이미지로 설정하는 코드.
         }
     }
 }
